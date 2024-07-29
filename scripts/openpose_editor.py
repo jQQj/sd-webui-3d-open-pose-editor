@@ -67,7 +67,7 @@ def create_ui():
     try:
         from modules.shared import opts
 
-        cn_max: int = opts.control_net_max_models_num
+        cn_max: int = opts.control_net_unit_count
         use_online: bool = opts.openpose3d_use_online_version
     except (ImportError, AttributeError):
         cn_max = 0
